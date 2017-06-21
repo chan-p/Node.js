@@ -11,6 +11,9 @@ var grades   = require('./routes/grades');
 var projects = require('./routes/projects');
 
 var app = express();
+var server = app.listen(1323, function(){
+  console.log("Node.js is listening to PORT:" + server.address().port);
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

@@ -1,5 +1,4 @@
 'use strict';
-
 module.exports = function(sequelize, DataTypes) {
   var Member = sequelize.define('member', {
     name: DataTypes.STRING,
